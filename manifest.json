@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Resavio Mods",
+  "version": "1.0",
+  "description": "Modifikation für die Hotelsoftware Resavio",
+  "permissions": ["tabs", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://resavio.com/extranet/*"],
+      "js": ["mod.js"],
+      "css": ["mod.css"]
+    }
+  ]
+}
